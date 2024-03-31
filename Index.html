@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Search Platform</title>
+</head>
+<body>
+    <h1>Welcome to Car Finder</h1>
+
+    <!-- Login Form -->
+    <section>
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div>
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" name="email" placeholder="john.doe@mail.com" required>
+            </div>
+            <div>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" name="password" placeholder="SecurePassword123" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Car Search Form -->
+    <section>
+        <h2>Search for Cars</h2>
+        <form action="/search" method="GET">
+            <div>
+                <label for="searchQuery">Car Model or Make:</label>
+                <input type="text" id="searchQuery" name="query" placeholder="e.g., Tesla Model S" required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+</body>
+</html>
